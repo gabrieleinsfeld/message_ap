@@ -1,0 +1,15 @@
+<h1>This is EJS</h1>
+
+<% for (let i = 0; i < messages.length; i++) { %>
+<span>New Message</span>
+<button><a href="/message/<%= i %>">Open</a> </button> 
+</span>
+<ul>
+  <li>Message:<%= messages[i].text %></li>
+  <li>User:<%= messages[i].user %></li>
+  <li>Added:<%= messages[i].added %></li>
+</ul>
+<% } %>
+<button>
+  <a href="/new" style="text-decoration: none; color: black">New Message</a>
+</button>
